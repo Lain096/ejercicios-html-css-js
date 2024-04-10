@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+         <!-- Datos nombre - apellidos -->
+        
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+         <!-- Dirección -->
+        <label for="tipo_via">Tipo de vía:</label>
+        <input type="text" id="tipo_via" name="tipo_via" required>
+
+        <label for="nombre_via">Nombre de la vía:</label>
+        <input type="text" id="nombre_via" name="nombre_via" required>
+
+        <label for="codigo_postal">Código Postal:</label>
+        <input type="text" id="codigo_postal" name="codigo_postal" required>
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+
+        <label for="provincia">Provincia:</label>
+        <input type="text" id="provincia" name="provincia" required>
+  
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required>
+  
+         <!-- Fechas -->
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+  
+        <!-- Nota media -->
+        <label for="nota_media">Nota media en la universidad:</label>
+        <input type="number" id="nota_media" name="nota_media" min="0" max="10" step="0.01" required>
+  
+         <!-- Telefono -->
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+        
+         <!-- Email -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" patterm="[a-z0-9]+@+[a-z]+.[a-z]{2,3}" required>
+  
+        <!-- Contraseña -->
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+  
+        <label for="confirmar_contrasena">Repetir contraseña:</label>
+        <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+  
+         <!-- Pais - Seleccion -->
+        <label for="pais_select">Seleccionar país:</label>
+        <select id="pais_select" name="pais_select" required>
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Andorra">Andorra</option>
+        </select><br>
+  
+        <!-- Tipo de cuenta -->
+        <div>Seleccionar cuenta:
+            <label for="rd_gratuita">Gratuita</label>
+            <input type="radio" id="rd_gratuita" name="cuenta" value="cod_1">
+            <label for="rd_basica">Basica</label>
+            <input type="radio" id="rd_basica" name="cuenta" value="cod_2">
+            <label for="rd_premium"> Premium</label>
+            <input type="radio" id="rd_premium" name="cuenta" value="cod_3">
+        </div>
+
+        <div id="descripcion_cuenta" >
+            <p>Descripción de la cuenta:</p>
+            <p id="descripcion"></p>
+        </div>
+  
+        <!-- Sobre mí -->
+        <label for="sobre_mi">Sobre mí:</label>
+        <textarea id="sobre_mi" name="sobre_mi"></textarea>
+  
+        <!-- Foto de perfil -->
+        <label for="foto_perfil">Foto de perfil:</label>
+        <input type="file" id="foto_perfil" name="foto_perfil" accept=".jpg,.png">
+  
+        <!-- Subir CV -->
+        <label for="cv">Subir CV:</label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc">
+
+        <!-- Generar archivo -->
+        <input type="submit" value="registrarse">
+
+    </form>
+
+</body>
+</html>
