@@ -1,0 +1,84 @@
+
+
+.container{
+    display: flex;
+    margin: auto;
+  
+    margin-top: 40px;
+}
+
+
+.cuad{
+    margin: 10px;
+    flex-grow: 1;
+   
+}
+
+.rect{
+    border-radius: 20%;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.circ{
+    border-radius: 50%;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+
+.div1{
+    background-color: red;
+    height: 50px;
+    width: 50px; 
+    
+}
+.div2{
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+ 
+   
+}
+.div3{
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+
+   
+}
+.div4{
+    background-color: lightgreen;
+    height: 50px;
+    width: 50px;
+
+ 
+}
+.div5{
+    background-color: lightblue;
+    height: 50px;
+    width: 50px;
+   
+   
+}
+
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover{
+    transform: translateY(-10px);
+}
+
+input[type=checkbox]{
+    display:none;
+}
+
+
+
+.ckBox:checked ~ .caja{
+    transform: rotate(45deg);
+}
+
+
+
+
+
+

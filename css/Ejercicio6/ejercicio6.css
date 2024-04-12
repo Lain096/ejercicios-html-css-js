@@ -1,0 +1,66 @@
+
+
+.container{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.cuad{
+    margin: 10px;
+    flex-grow: 1;
+    transform: rotate(45deg);
+}
+.cuad:hover{
+    transform: rotate(0deg);
+}
+
+.rect{
+    border-radius: 20%;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.circ{
+    border-radius: 50%;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+
+.div1{
+    background-color: red;
+    height: 50px;
+    width: 50px; 
+    
+}
+.div2{
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+ 
+   
+}
+.div3{
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+
+   
+}
+.div4{
+    background-color: lightgreen;
+    height: 50px;
+    width: 50px;
+
+ 
+}
+.div5{
+    background-color: lightblue;
+    height: 50px;
+    width: 50px;
+   
+   
+}
+
