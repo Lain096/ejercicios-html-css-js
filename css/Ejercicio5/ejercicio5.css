@@ -1,41 +1,35 @@
 body{
-    display: inline-block;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+
 }
-div{
+
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    width: fit-content;
+    margin: auto;
+}
+
+
+.cuad{
     margin: 3px;
-    
+    flex-grow: 1;
 }
 
-.cuadrado{
-    display: flex;
-    background-color: azure;
-
-}
-
-.circulo{
-    display: flex;
-    background-color: blueviolet;
-}
-
-.rectangulo{
-    display: flex;
-    background-color: blue;
-}
-
-.cuadrado>div{
-    cursor: pointer;
-}
-
-.circulo>div{
-    
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.rectangulo>div{
+.rect{
     border-radius: 20%;
-    cursor: pointer;
+    margin: 3px;
+    flex-grow: 1;
 }
+
+.circ{
+    border-radius: 50%;
+    margin: 3px;
+    flex-grow: 1;
+}
+
 
 .div1{
     background-color: red;
@@ -71,3 +65,4 @@ div{
    
    
 }
+
