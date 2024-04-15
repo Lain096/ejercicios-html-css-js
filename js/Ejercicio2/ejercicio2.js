@@ -9,7 +9,7 @@ function changeColors(){
 
     //content.styles.backgroundColor = colores[i];
     
-    i = (i===colores.length-1)?0:i+1;
+    i = ((i===colores.length-1)?0:i+1);
 };
 
 setInterval(changeColors,1000);
